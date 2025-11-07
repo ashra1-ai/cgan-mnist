@@ -17,4 +17,66 @@ This work **reinforces my understanding of GAN architectures**, adversarial trai
 ---
 
 ## 📂 Repository Structure
+cgan-mnist/
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── config.py
+│
+├── src/
+│ ├── init.py
+│ ├── train.py
+│ ├── generate.py
+│ ├── utils.py
+│ └── models/
+│ ├── init.py
+│ ├── generator.py
+│ └── discriminator.py
+│
+├── checkpoints/ # Trained weights
+│ └── generator_epoch_020.pth
+│
+├── results/
+│ ├── samples/ # Generated images
+│ │ ├── custom_digit_3.png
+│ │ ├── custom_digit_7.png
+│ │ └── latent_interp_3_7.png
+│ └── training_log.csv # Training metrics
+│
+└── notebooks/
+└── cgan_mnist_analysis.ipynb
 
+
+
+
+---
+
+## 📈 Results
+
+**Generated Samples by Digit**
+
+| Digit 3 | Digit 7 |
+|---------|---------|
+| ![Digit 3](results/samples/custom_digit_3.png) | ![Digit 7](results/samples/custom_digit_7.png) |
+
+**Latent Space Interpolation**
+
+Interpolating between 3 → 7:
+
+![Latent Interpolation](results/samples/latent_interp_3_7.png)
+
+**Training Loss Curves**
+
+Loss curves (discriminator vs. generator):
+
+![Training Loss](results/samples/loss_plot.png)
+
+---
+
+## ⚡ Quick Start
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/cgan-mnist.git
+cd cgan-mnist
