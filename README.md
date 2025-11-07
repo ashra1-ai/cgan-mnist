@@ -19,31 +19,6 @@ A **Conditional Generative Adversarial Network (CGAN)** implementation trained o
 
 ---
 
-## 📁 Repository Structure
-
-cgan-mnist/
-├── src/ # Source code
-│ ├── train.py # Training script
-│ ├── generate.py # Generation utilities
-│ ├── utils.py # Utility functions
-│ └── models/
-│ ├── generator.py # CGAN generator architecture
-│ └── discriminator.py # CGAN discriminator architecture
-├── notebooks/
-│ └── cgan_mnist_analysis.ipynb # Complete analysis notebook
-├── checkpoints/ # Saved model weights
-├── results/
-│ ├── samples/ # Generated images
-│ └── training/ # Loss curves & metrics
-├── assets/ # Documentation assets
-├── requirements.txt # Python dependencies
-└── README.md # Project overview
-
-yaml
-Copy code
-
----
-
 ## 📊 Results & Visualizations
 
 ### Generated Samples
