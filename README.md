@@ -24,7 +24,7 @@ A **Conditional Generative Adversarial Network (CGAN)** implementation trained o
 ### Generated Samples
 | Digit 3 | Digit 7 | Digit 9 |
 |---------|---------|---------|
-| ![Digit 3](results/samples/digit_3_grid.png) | ![Digit 7](results/samples/digit_7_grid.png) | ![Digit 9](results/samples/digit_9_grid.png) |
+| ![Digit 3](results/samples/custom_digit_3.png) | ![Digit 7](results/samples/custom_digit_7.png) | ![Digit 9](results/samples/custom_digit_9.png) |
 
 ### Latent Space Interpolation
 **Smooth transition from 3 → 7:**
