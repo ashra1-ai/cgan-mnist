@@ -16,35 +16,35 @@ This work **reinforces my understanding of GAN architectures**, adversarial trai
 
 ---
 
-## 📂 Repository Structure
-cgan-mnist/
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── config.py
+📂 **cgan-mnist/**
+├── **README.md**
+├── **LICENSE**
+├── **requirements.txt**
+├── **config.py**
 │
-├── src/
-│ ├── init.py
-│ ├── train.py
-│ ├── generate.py
-│ ├── utils.py
-│ └── models/
-│ ├── init.py
-│ ├── generator.py
-│ └── discriminator.py
+├── **src/**
+│   ├── __init__.py
+│   ├── train.py
+│   ├── generate.py
+│   ├── utils.py
+│   └── **models/**
+│       ├── __init__.py
+│       ├── generator.py
+│       └── discriminator.py
 │
-├── checkpoints/ # Trained weights
-│ └── generator_epoch_020.pth
+├── **checkpoints/**        # Saved weights
+│   └── generator_epoch_020.pth
 │
-├── results/
-│ ├── samples/ # Generated images
-│ │ ├── custom_digit_3.png
-│ │ ├── custom_digit_7.png
-│ │ └── latent_interp_3_7.png
-│ └── training_log.csv # Training metrics
+├── **results/**
+│   ├── **samples/**        # Generated images
+│   │   ├── custom_digit_3.png
+│   │   ├── custom_digit_7.png
+│   │   └── latent_interp_3_7.png
+│   └── training_log.csv    # Training metrics
 │
-└── notebooks/
-└── cgan_mnist_analysis.ipynb
+└── **notebooks/**
+    └── cgan_mnist_analysis.ipynb
+
 
 
 
