@@ -1,110 +1,110 @@
-# Conditional GAN (CGAN) on MNIST
+project:
+  name: "Conditional GAN (CGAN) on MNIST"
+  certificate: "assets/gans_certificate.png"
+  completion_date: "Oct 28, 2025"
+  overview: >
+    A Conditional Generative Adversarial Network (CGAN) implementation trained on the MNIST dataset
+    to generate digit-specific images. Practical application of the DeepLearning.AI
+    Generative Adversarial Networks (GANs) Specialization demonstrating advanced generative modeling.
+  key_features:
+    - "Conditional Generation: Generate specific MNIST digits (0-9) on demand"
+    - "Training Visualization: Monitor generator and discriminator loss dynamics"
+    - "Latent Space Exploration: Smooth interpolations between digit classes"
+    - "Comprehensive Analysis: Detailed Jupyter notebook with training insights"
+    - "Production Ready: Modular code structure for easy extension"
 
-![GANs Certificate](assets/gans_certificate.png)
+repository_structure:
+  cgan-mnist:
+    src:
+      - train.py: "Training script"
+      - generate.py: "Generation utilities"
+      models:
+        - generator.py: "CGAN generator architecture"
+        - discriminator.py: "CGAN discriminator architecture"
+    notebooks:
+      - cgan_mnist_analysis.ipynb: "Complete analysis notebook"
+    checkpoints: "Saved models"
+    results:
+      samples: "Generated images"
+      training: "Loss plots & metrics"
+    assets: "Documentation assets"
+    requirements.txt: "Dependencies"
+    README.md: "Project overview"
 
-*Completed DeepLearning.AI GAN Specialization (Oct 28, 2025)*
+results_visualizations:
+  generated_samples:
+    - digit: 3
+      image: "results/samples/digit_3_grid.png"
+    - digit: 7
+      image: "results/samples/digit_7_grid.png"
+    - digit: 9
+      image: "results/samples/digit_9_grid.png"
+  latent_space_interpolation:
+    description: "Smooth transition from 3 → 7"
+    image: "results/samples/latent_interpolation_3_7.png"
+  training_dynamics:
+    description: "Discriminator vs. Generator Loss"
+    image: "results/training/loss_curves.png"
 
----
-
-## Overview
-
-This repository demonstrates a **Conditional Generative Adversarial Network (CGAN)** trained on the MNIST dataset. This project was developed as a **practical implementation** for the DeepLearning.AI [Generative Adversarial Networks (GANs) Specialization](https://www.deeplearning.ai/courses/generative-adversarial-networks-gans/).
-
-**Key Features:**
-
-- Digit-specific image generation using CGAN.
-- Visualization of **generator** and **discriminator losses** during training.
-- Latent space interpolation between digits.
-- Fully documented **Jupyter notebook analysis** of generated images and training metrics.
-
-This work reinforces my understanding of GAN architectures, adversarial training, and generative modeling — skills directly applicable to my upcoming research on **EGEAT (Exact Geometric Ensemble Adversarial Training)** for robust deep learning.
-
----
-
-## Repository Structure
-
-
----
-
-## 📈 Results
-
-**Generated Samples by Digit**
-
-| Digit 3 | Digit 7 |
-|---------|---------|
-| ![Digit 3](results/samples/custom_digit_3.png) | ![Digit 7](results/samples/custom_digit_7.png) |
-
-**Latent Space Interpolation**
-
-Interpolating between 3 → 7:
-
-![Latent Interpolation](results/samples/latent_interp_3_7.png)
-
-**Training Loss Curves**
-
-Discriminator vs. Generator losses:
-
-![Training Loss](results/samples/loss_plot.png)
-
----
-
-# ⚡ Quick Start Guide
 quick_start:
-  - step: "Clone the repository"
-    command: |
-      git clone https://github.com/yourusername/cgan-mnist.git
-      cd cgan-mnist
-
-  - step: "Create a virtual environment"
+  clone_setup:
     commands:
-      linux_macos: |
-        python -m venv venv_cgan
-        source venv_cgan/bin/activate
-      windows: |
-        python -m venv venv_cgan
-        venv_cgan\Scripts\activate
-
-  - step: "Install dependencies"
-    command: "pip install -r requirements.txt"
-
-  - step: "Optional: Add virtual environment to Jupyter"
-    command: "python -m ipykernel install --user --name=venv_cgan --display-name \"CGAN venv\""
-
-  - step: "Train the CGAN (optional)"
+      - "git clone https://github.com/yourusername/cgan-mnist.git"
+      - "cd cgan-mnist"
+  environment_setup:
+    create_venv: "python -m venv venv_cgan"
+    activate:
+      linux_mac: "source venv_cgan/bin/activate"
+      windows: "venv_cgan\\Scripts\\activate"
+    install_dependencies: "pip install -r requirements.txt"
+  jupyter_integration:
+    optional: true
+    command: "python -m ipykernel install --user --name=venv_cgan --display-name 'CGAN Kernel'"
+  train_model:
     command: "python -m src.train"
-
-  - step: "Generate digit-specific samples"
-    command: "python -m src.generate --digit 3 --count 25 --checkpoint checkpoints/generator_epoch_020.pth"
-
-  - step: "Explore results in the notebook"
+  generate_samples:
+    example:
+      digit: 3
+      count: 25
+      checkpoint: "checkpoints/generator_epoch_020.pth"
+  explore_results:
     command: "jupyter notebook notebooks/cgan_mnist_analysis.ipynb"
 
-# 🛠 Technologies & Tools
-technologies:
-  deep_learning:
-    - "PyTorch"
-    - "torchvision"
-  
-  data_handling_visualization:
-    - "pandas"
-    - "numpy" 
-    - "matplotlib"
-    - "seaborn"
-    - "tqdm"
+technology_stack:
+  deep_learning: ["PyTorch", "torchvision"]
+  data_visualization: ["pandas", "numpy", "matplotlib", "seaborn"]
+  development: ["Jupyter", "ipykernel", "tqdm"]
+  image_processing: ["Pillow", "OpenCV"]
 
-  notebook_support:
-    - "Jupyter"
-    - "ipykernel"
+advanced_usage:
+  training_options:
+    command: |
+      python -m src.train \
+        --epochs 50 \
+        --batch-size 64 \
+        --learning-rate 0.0002 \
+        --latent-dim 100 \
+        --save-interval 5
+  generation_features:
+    generate_multiple_digits: "python -m src.generate --digits 0 1 2 3 --count 16"
+    interpolate_animation: "python -m src.generate --interpolate 3 7 --steps 10 --gif"
 
-  image_utilities:
-    - "Pillow"
+model_architecture:
+  generator: "Fully connected network with conditional label embedding"
+  discriminator: "Binary classifier with label conditioning"
+  conditioning: "Label information injected into both networks"
+  optimization: "Adam optimizer with tuned hyperparameters"
 
-# Project Structure
-project_structure:
-  - "src/"
-    - "train.py"
-    - "generate.py"
-  - "notebooks/"
-    - "cgan_mnist_analysis.ipynb"
-  - "checkpoints/"
-  - "requirements.txt"
+learning_outcomes:
+  - "GAN training dynamics and convergence challenges"
+  - "Conditional generation techniques"
+  - "Latent space manipulation and interpolation"
+  - "Model evaluation and visualization strategies"
+  - "Production-ready deep learning code structure"
+
+future_extensions:
+  - "DCGAN architecture with convolutional layers"
+  - "WGAN-GP for improved training stability"
+  - "Class-conditional batch normalization"
+  - "Real-time training visualization"
+  - "Web interface for interactive generation"
