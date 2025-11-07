@@ -28,11 +28,11 @@ A **Conditional Generative Adversarial Network (CGAN)** implementation trained o
 
 ### Latent Space Interpolation
 **Smooth transition from 3 → 7:**
-![Latent Interpolation](results/samples/latent_interpolation_3_7.png)
+![Latent Interpolation](results/samples/interpolation.gif)
 
 ### Training Dynamics
 **Discriminator vs. Generator Loss:**
-![Training Loss](results/training/loss_curves.png)
+![Training Loss](results/loss_curve.png)
 
 ---
 
