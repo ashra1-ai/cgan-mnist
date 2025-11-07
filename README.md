@@ -55,9 +55,9 @@ Development: Jupyter, ipykernel, tqdm
 Image Processing: Pillow, OpenCV
 
 ## 🔬 Advanced Usage
-Training Options
-bash
-Copy code
+
+### ✅ Training with Custom Options
+
 python -m src.train \
     --epochs 50 \
     --batch-size 64 \
@@ -65,7 +65,8 @@ python -m src.train \
     --latent-dim 100 \
     --save-interval 5
 
-## Generate multiple digits at once
+
+### Generate multiple digits at once
 python -m src.generate --digits 0 1 2 3 --count 16
 
 ## Create interpolation animation
