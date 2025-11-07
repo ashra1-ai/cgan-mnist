@@ -65,11 +65,12 @@ python -m src.train \
     --latent-dim 100 \
     --save-interval 5
 
-# Generate multiple digits at once
+## Generate multiple digits at once
 python -m src.generate --digits 0 1 2 3 --count 16
 
-# Create interpolation animation
+## Create interpolation animation
 python -m src.generate --interpolate 3 7 --steps 10 --gif
+
 ## Model Architecture
 Generator: Fully connected network with conditional label embedding
 
@@ -79,7 +80,7 @@ Conditioning: Label information injected into both networks
 
 Optimization: Adam optimizer with tuned hyperparameters
 
-🎓 Learning Outcomes
+## Learning Outcomes
 GAN training dynamics and convergence challenges
 
 Conditional generation techniques
@@ -90,7 +91,7 @@ Model evaluation and visualization strategies
 
 Production-ready deep learning code structure
 
-🔮 Future Extensions
+## Future Extensions
 DCGAN architecture with convolutional layers
 
 WGAN-GP for improved training stability
