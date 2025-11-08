@@ -420,9 +420,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact & Links
 
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
-- **Portfolio**: [Your Website](https://yourwebsite.com)
+- **GitHub**: [@yourusername](https://github.com/ashra1-ai)
+- **LinkedIn**: [Your Profile](https://www.linkedin.com/in/kanishkashra/)
 
 ---
 
