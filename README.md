@@ -418,13 +418,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📧 Contact & Links
-
-- **GitHub**: [@yourusername](https://github.com/ashra1-ai)
-- **LinkedIn**: [Your Profile](https://www.linkedin.com/in/kanishkashra/)
-
----
-
 <div align="center">
 
 **⭐ If you found this project helpful, please consider giving it a star! ⭐**
